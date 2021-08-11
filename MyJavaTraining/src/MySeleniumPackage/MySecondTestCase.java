@@ -1,0 +1,48 @@
+package MySeleniumPackage;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+public class MySecondTestCase {
+	
+	static int a;
+	static int b;
+	
+	
+	@Before
+	public void startTest() {
+		System.out.println("Start Test");
+		
+		a = 200;
+		b = 100;
+	}
+	@Test
+	public void myFirstTest() {
+		System.out.println("First Test Case");
+		
+		int sum =a+b;
+		assertEquals(300,sum);
+		
+	}
+	@Test
+	public void mySecondTest() {
+		System.out.println("Second Test Case");
+		
+		int sub =a-b;
+		assertFalse(100==sub);
+		
+	}
+	@After
+	public void endTest() {
+		System.out.println("End of Test");
+		
+	}
+
+
+}

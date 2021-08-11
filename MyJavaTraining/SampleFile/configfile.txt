@@ -1,0 +1,6 @@
+URL = https://www.google.com
+username = mahavirsingh
+password = chhoker@1123
+Creditcardnumber = 1234567
+CreditExpDatae = 04/24
+CreditCVVnumber = 1234
